@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="calculator" id="calc">
+        <div class="result">0</div>
+
+        <div class="buttons">
+            <button class="operator">C</button>
+            <button class="operator">+/-</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">x</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+            <button id="themeBtn">Тема</button>
+        </div>
+
+        <a href="#" class="github-btn">GitHub</a>
+
+        <select class="dropdown">
+            <option>Обычный</option>
+            <option>Булевы функции</option>
+            <option>Таблица истинности</option>
+        </select>
+
+        <details>
+            <summary>Автор</summary>
+            <p>ФИО: Сербенюк П.П.</p>
+            <p>Группа: ИУ5-41Б</p>
+        </details>
+
+        <mark>
+        <p>Цель работы: знакомство с HTML и CSS</p>
+        </mark>
+
+        <div class="footer">ЛР выполнена Сербенюк П.П.</div>
+    </div>
+
+    <script>
+        document.getElementById('themeBtn').onclick = function() {
+            document.getElementById('body').classList.toggle('light-theme');
+        }
+    </script>
+</body>
+</html>
